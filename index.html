@@ -7,29 +7,19 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      max-width: 800px;
-      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       background-color: #f9f9f9;
       color: #333;
     }
-    h1, h2 {
-      color: green;
-    }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
-      margin: 30px 0;
-    }
-    nav {
-        background-color: green;
+
+    header {
+    background-color: green;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -39,28 +29,71 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; 
+}
+
+    h1, h2 {
+      color: green;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 30px 0;
+    }
+
+    nav {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.2em;
+      width: 100%;
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
     }
 
     .container {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    top: 60px;
-    bottom: 60px;
-    position: relative;
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      flex: 1;
+      overflow-y: auto;
+      margin-top: 70px; /* Space for the fixed nav */
+      margin-bottom: 70px; /* Space for the footer */
+   
+
     }
 
+    footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
   </style>
 </head>
 <body>
 
-  <nav>
+  <header>
     Privacy Policy - VIPO VPN
-  </nav>
+</header>
 
   <div class="container">
     <h1>Privacy Policy for VIPO VPN</h1>
@@ -118,9 +151,9 @@
     <p><strong>Email:</strong> <a href="mailto:fourapps13@gmail.com">fourapps13@gmail.com</a></p>
   </div>
 
-    <footer style="text-align: center; margin-top: 20px;">
-        <p>&copy; 2024 VIPO VPN. All rights reserved.</p>
-
-</body>
+  <footer>
+    <p>&copy; 2024 VIPO VPN. All rights reserved.</p>
+    <p><a href="https://www.freeprivacypolicy.com/live/3f1b2c5e-0d7f-4a8b-9c6d-0e1f3a2b5c8e" target="_blank" style="color: white; text-decoration: none;">Privacy Policy</a></p>
+  </footer>
 </body>
 </html>
